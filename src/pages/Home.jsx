@@ -11,7 +11,7 @@ import {
 const Home = () => {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      {/* Hero Section */}
+
       <section
         id="home"
         className="flex flex-col items-center justify-center text-center px-6 py-20"
@@ -39,7 +39,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
       <section
         id="features"
         className="grid md:grid-cols-3 gap-6 px-6 md:px-20 py-12"
@@ -75,7 +74,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Section */}
+      
       <section id="about" className="px-6 md:px-20 py-20 bg-gray-50">
         <h2 className="text-3xl font-bold mb-6">Our Story</h2>
         <div className="grid md:grid-cols-2 gap-8 items-start">
@@ -114,7 +113,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Values */}
+       
         <div className="mt-16 text-center">
           <h2 className="text-3xl font-bold mb-4">Our Values</h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-12">
@@ -158,7 +157,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
+      
       <section id="contact" className="px-6 md:px-20 py-20">
         <h2 className="text-4xl font-bold text-center mb-6">
           Get in <span className="text-pink-500">Touch</span>
@@ -168,7 +167,6 @@ const Home = () => {
           we'll respond as soon as possible.
         </p>
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Contact Info */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Let's Connect</h3>
             <p className="text-gray-600 mb-6">
@@ -182,16 +180,15 @@ const Home = () => {
               </li>
               <li>
                 <span className="font-semibold text-orange-500">Call Us:</span>{" "}
-                +1 (555) 123-4567
+                +995 599 19 19 19
               </li>
               <li>
                 <span className="font-semibold text-orange-500">Visit Us:</span>{" "}
-                123 Innovation Drive, San Francisco, CA
+                Tbilisi,saburtalo
               </li>
             </ul>
           </div>
 
-          {/* Contact Form */}
           <form className="bg-white p-6 rounded-2xl shadow-md space-y-4">
             <div className="grid md:grid-cols-2 gap-4">
               <input
@@ -223,7 +220,7 @@ const Home = () => {
       </section>
 
       <footer className="bg-gray-100 py-6 text-center text-gray-600">
-        © {new Date().getFullYear()} Kan-Guroo. All rights reserved.
+         {new Date().getFullYear()} Kan-Guroo. All rights reserved.
       </footer>
     </main>
   );

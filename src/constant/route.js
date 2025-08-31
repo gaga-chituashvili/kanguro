@@ -3,7 +3,7 @@ const signin = "/signin";
 const signup = "/signup";
 
 export const routes = {
-    home,
-    signin,
-    signup
-}
+  home,
+  signin,
+  signup,
+};
