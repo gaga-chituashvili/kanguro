@@ -1,18 +1,29 @@
 import React, { useState } from "react";
 import Navigation from "./Navigation";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { routes } from "../constant/route";
 import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const scrollUp = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
-    <header className="backdrop-blur-md bg-white/70 border-b border-gray-200 flex justify-between items-center px-6 py-4 shadow-sm sticky top-0 z-50">
-      <span className="flex items-center gap-2 text-xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
-        <div className="w-8 h-8 rounded-full bg-gradient-to-r from-pink-500 to-orange-400 flex items-center justify-center text-white font-bold">
+    <header className="backdrop-blur-md bg-white/70 border-b border-gray-200 flex justify-between items-center px-8 py-4 shadow-sm sticky top-0 z-50 cursor-pointer">
+      <span
+        onClick={() => {
+          scrollUp();
+          navigate(routes.home);
+        }}
+        className="flex items-center gap-2 text-xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent"
+      >
+        <span className="w-8 h-8 rounded-full bg-gradient-to-r from-pink-500 to-orange-400 flex items-center justify-center text-white font-bold">
           K
-        </div>
+        </span>
         Kan-Guroo
       </span>
 
