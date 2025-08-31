@@ -190,7 +190,7 @@ const Home = () => {
           </div>
 
           <form className="bg-white p-6 rounded-2xl shadow-md space-y-4">
-            <div className="grid md:grid-cols-2 gap-4">
+            <article className="grid md:grid-cols-2 gap-4">
               <input
                 type="text"
                 placeholder="Your Name"
@@ -201,7 +201,7 @@ const Home = () => {
                 placeholder="Email Address"
                 className="border rounded-lg px-4 py-2 w-full"
               />
-            </div>
+            </article>
             <input
               type="text"
               placeholder="Subject"
@@ -210,9 +210,9 @@ const Home = () => {
             <textarea
               placeholder="Message"
               rows="4"
-              className="border rounded-lg px-4 py-2 w-full"
+              className="border rounded-lg px-4 py-2 w-full resize-none"
             ></textarea>
-            <button className="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white py-3 rounded-lg">
+            <button type="submit" className="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white py-3 rounded-lg">
               Send Message
             </button>
           </form>
